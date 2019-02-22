@@ -24,9 +24,11 @@ source /gscratch/srlab/programs/scripts/paths.sh
  
  
 /gscratch/srlab/programs/ncbi-blast-2.6.0+/bin/blastx  \
--query /gscratch/srlab/sr320/query/ref_C_virginica-3.0_Gnomon_gene.fa \
+-query /gscratch/srlab/sr320/data/geoduck/Pgenerosa_v070.a.makergene.fa \
 -db /gscratch/srlab/sr320/blastdb/uniprot_sprot_080917 \
 -evalue 1E-05 \
 -outfmt 6 \
+-max_target_seqs 1 \
+-max_hsps 1 \
 -num_threads 28 \
--out Cv_gene_sprot.blastout
+-out /gscratch/srlab/sr320/analyses/0222/Pgenerosa_v070.a.makergene.blastx.uniprot.tab
